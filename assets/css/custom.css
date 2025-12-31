@@ -20,7 +20,8 @@ a {
     transition: all .3s ease-in-out;
 }
 
-button:focus {
+button:focus,
+input:focus {
     outline: none !important;
     box-shadow: none !important;
 }
@@ -188,7 +189,12 @@ p::first-letter {
     background: #f2f3f5;
     height: 765px;
 }
-.deshboard-wrap .side-bar{height: 730px;overflow: auto;}
+.deshboard-wrap .wrap_crash{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.deshboard-wrap .side-bar{height: 730px;overflow: auto;overflow-x: hidden;width: 30%;}
 .deshboard-wrap .side-bar .side-contant{
     background: #fff;
     border-radius: 10px;
@@ -284,23 +290,41 @@ p::first-letter {
     justify-content: space-between;
     background: transparent;
     border-bottom: 1px solid #0000005e;
-    padding: 0px 0px 15px;
+    padding: 0px 10px 20px;
 }
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn .accordion-button::after {
     margin-left: 0;
 }
-.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn i{
-    font-size: 20px;
-    color: #ffffff;
-    margin-right: 20px;
-    background: #4a90e2;
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn .form-check-input.custom-radio{
+    margin: 0px 20px 0px 0px;
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    transition: all 0.3s ease;
 }
+
+.custom-radio:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.custom-radio:checked::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path d='M6.173 13.233L2.4 9.46l1.414-1.414 2.36 2.36 6.01-6.01 1.414 1.414z'/></svg>") no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn .two-part{
     display: flex;
     align-items: center;
@@ -319,38 +343,75 @@ p::first-letter {
     color: #777;
 }
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body{
-    padding: 25px 0px 0px;
+    padding: 25px 10px 0px;
 }
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav{
+    position: relative;
+    overflow: hidden;
 }
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn{
     text-align: start;
     background: transparent;
     padding: 0;
     margin: 0px 0px 20px;
+    display: flex;
+    align-items: self-start;
+    gap: 40px;
 }
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p{
-    font-size: 23px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 40px;
     color: #343434;
     font-weight: 400;
 }
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn .form-check-input {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 10px 0px 0px;
+}
+
+.accordion-body {}
+
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p span{
     display: block;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
 }
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn .form-check-input {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 10px 0px 0px;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn{
+    position: relative;
+}
+
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .line::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 80%;
+    background: #0d6efd;
+    top: 38px;
+    left: 8px;
+    overflow: hidden;
+}
+
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p span i{
-    font-size: 20px;
-    margin: 0px 10px 0px 0px;
+    font-size: 25px;
+    margin: 0px 5px 0px 0px;
 }
 
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn.active{
 }
 .deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn.active p{}
 
-.deshboard-wrap .detail-side{}
+.deshboard-wrap .detail-side{
+    width: 70%;
+}
 .deshboard-wrap .detail-side .main-box{
     background: #ffffff;
     box-shadow: 0px 0px 7px #808080b0;
@@ -385,7 +446,10 @@ p::first-letter {
 }
 .deshboard-wrap .detail-side .main-box .content-with-box .card{
     border: 0;
-    margin: 50px 0px 40px;
+    margin: 50px 0px 0px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .card p{
+    margin: 40px 0px 0px;
 }
 .deshboard-wrap .detail-side .main-box .content-with-box h3{
     font-size: 28px;
@@ -452,7 +516,7 @@ p::first-letter {
 }
 .deshboard-wrap .detail-side .main-box .content-with-box video{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .deshboard-wrap .detail-side .main-box .btn-complete {
     display: flex;
@@ -476,3 +540,4 @@ p::first-letter {
     border-color: #4a90e2;
 }
 /**************************** deshboard-wrap close ***************************/
+
