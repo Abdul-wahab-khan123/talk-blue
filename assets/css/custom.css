@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Google Sans", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+figure {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+p {
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: unset;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+/* Bounce To Right */
+.hvr-bounce-to-right {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-to-right:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-right:hover,
+.hvr-bounce-to-right:focus,
+.hvr-bounce-to-right:active {
+    color: #ff5722 !important;
+}
+
+.hvr-bounce-to-right:hover:after,
+.hvr-bounce-to-right:focus:after,
+.hvr-bounce-to-right:active:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Bounce To Right */
+/* Bounce To left */
+.hvr-bounce-to-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-to-left::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-left:hover,
+.hvr-bounce-to-left:focus,
+.hvr-bounce-to-left:active {
+    color: #7c65ff !important;
+}
+
+.hvr-bounce-to-left:hover::after,
+.hvr-bounce-to-left:focus::after,
+.hvr-bounce-to-left:active::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Bounce To left */
+/**************************** Btn hover Close ***************************/
+
+
+/**************************** deshboard-wrap start ***************************/
+.top_desh{
+    background-color: #00192a;
+    padding: 20px 20px;
+}
+.top_desh p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+}
+.top_desh p span{
+    font-weight: 600;
+}
+.deshboard-wrap{
+    position: relative;
+    overflow: hidden;
+    padding: 30px 10px 0px;
+    background: #f2f3f5;
+    height: 765px;
+}
+.deshboard-wrap .side-bar{height: 730px;overflow: auto;}
+.deshboard-wrap .side-bar .side-contant{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #808080b0;
+    position: relative;
+    overflow: hidden;
+}
+.deshboard-wrap .side-bar .side-contant .main-img{
+    background: #4a90e2;
+    text-align: center;
+    padding: 10px;
+}
+.deshboard-wrap .side-bar .side-contant .main-img img{
+    width: 20%;
+}
+.deshboard-wrap .side-bar .side-contant .txt{
+    padding: 30px 30px;
+}
+.deshboard-wrap .side-bar .side-contant a{
+    font-size: 20px;
+    color: #777;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.deshboard-wrap .side-bar .side-contant a i{}
+
+.deshboard-wrap .side-bar .side-contant h2{
+    font-size: 45px;
+    line-height: 60px;
+    color: #000;
+    margin: 20px 0px 30px;
+}
+.deshboard-wrap .side-bar .side-contant .range{
+    width: 100%;
+}
+.deshboard-wrap .side-bar .side-contant .range input[type="range"]{
+    width: 100%;
+    height: 10px;
+    border-radius: 8px;
+    background: #4a90e2;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 0px 0px 15px;
+}
+.deshboard-wrap .side-bar .side-contant .range p{
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+}
+.deshboard-wrap .side-bar .side-contant .range p span{
+    font-weight: 600;
+    font-size: 23px;
+}
+.deshboard-wrap .side-bar .search-by{
+    position: relative;
+    margin-top: 25px;
+}
+.deshboard-wrap .side-bar .search-by input{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    font-size: 20px;
+}
+.deshboard-wrap .side-bar .search-by button{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    border: 0;
+    background: transparent;
+}
+.deshboard-wrap .side-bar .search-by button i{
+    font-size: 16px;
+}
+.deshboard-wrap .side-bar .faq-box{
+    position: relative;
+    margin-top: 40px;
+    background: transparent;
+}
+.deshboard-wrap .side-bar .faq-box .accordion{
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item{
+    background: transparent;
+    margin: 0px 0px 30px;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header{
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom: 1px solid #0000005e;
+    padding: 0px 0px 15px;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn .accordion-button::after {
+    margin-left: 0;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn i{
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 20px;
+    background: #4a90e2;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn .two-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 82%;
+}
+
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn .two-part h4{
+    color: #000;
+    font-size: 23px;
+    line-height: 33px;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-header .course-btn .two-part p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #777;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body{
+    padding: 25px 0px 0px;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav{
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn{
+    text-align: start;
+    background: transparent;
+    padding: 0;
+    margin: 0px 0px 20px;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p{
+    font-size: 23px;
+    line-height: 34px;
+    color: #343434;
+    font-weight: 400;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p span i{
+    font-size: 20px;
+    margin: 0px 10px 0px 0px;
+}
+
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn.active{
+}
+.deshboard-wrap .side-bar .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn.active p{}
+
+.deshboard-wrap .detail-side{}
+.deshboard-wrap .detail-side .main-box{
+    background: #ffffff;
+    box-shadow: 0px 0px 7px #808080b0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 730px;
+}
+.deshboard-wrap .detail-side .main-box .Lesson{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #777;
+}
+.deshboard-wrap .detail-side .main-box .Lesson h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+.deshboard-wrap .detail-side .main-box .Lesson .full{}
+.deshboard-wrap .detail-side .main-box .Lesson .full i{
+    font-size: 23px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box{
+    width: 100%;
+    height: 560px;
+    overflow: auto;
+    padding: 0px 100px;
+    max-height: 560px;
+    min-height: 560px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .card{
+    border: 0;
+    margin: 50px 0px 40px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    margin: 60px 0px 25px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box p{
+    margin: 0px 0px 30px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .para p{
+    flex: 1;
+    border: 1px solid #777;
+    padding: 20px;
+    height: 186px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .para span{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box ul{
+    margin: 24px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box ul li{
+    font-size: 20px;
+    list-style: disc;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box ul li span{
+    font-weight: 600;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .download-pdf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f3f5;
+    padding: 40px 30px;
+    border: 1px solid #36394d;
+    margin: 60px 0px 0px;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .download-pdf h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box .download-pdf .btn-download{
+    background: #36394d;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.deshboard-wrap .detail-side .main-box .content-with-box video{
+    width: 100%;
+    height: auto;
+}
+.deshboard-wrap .detail-side .main-box .btn-complete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    border-top: 1px solid #777;
+}
+.deshboard-wrap .detail-side .main-box .btn-complete .btn-mark{
+    border: 1px solid #000;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.deshboard-wrap .detail-side .main-box .btn-complete .btn-mark.complete{
+    background: #4a90e2;
+    color: #fff;
+    border-color: #4a90e2;
+}
+/**************************** deshboard-wrap close ***************************/
