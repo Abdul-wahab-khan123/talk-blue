@@ -1,14 +1,11 @@
 <?php include 'includes/links.php'; ?>
 <main>
-
     <div class="top_desh">
         <p>You are previewing <span>all course lessons</span>.</p>
     </div>
-
     <section class="deshboard-wrap">
         <div class="container-fluid">
             <div class="wrap_crash">
-
                 <div class="side-bar">
                     <div class="side-contant">
                         <div class="main-img">
@@ -125,8 +122,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="detail-side">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
@@ -285,10 +280,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
 </main>
 <?php include 'includes/script.php'; ?>
