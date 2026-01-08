@@ -4,7 +4,382 @@
 
 @media only screen and (min-width: 1400px) and (max-width: 1444px) {}
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .side-bar .side-top .side-logo .thumb-xl {
+        height: 50px;
+    }
+
+    .side-bar .side-top {
+        padding: 10px 10px;
+        margin: 0 0 10px 0;
+    }
+
+    .side-bar .menu-area {
+        padding: 0px 10px;
+        height: calc(100% - 160px);
+    }
+
+    .side-bar .menu-area .main-ul .mn-item .mn-link {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    li.logout .mn-link {
+        padding: 12px 14px !important;
+        font-size: 13px;
+    }
+
+    header {
+        width: calc(100% - 220px);
+    }
+
+    header .navbar .navbar-nav .nav-item .user-details h6 {
+        font-size: 16px;
+        margin: 0 0 0px 0;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    header .navbar {
+        padding: 10px 0 10px;
+    }
+
+    header .navbar .navbar-nav .nav-item .user-profile-area .desc h6 {
+        font-size: 14px;
+    }
+
+    header .navbar .navbar-nav .nav-item .user-profile-area .desc span {
+        font-size: 12px;
+    }
+
+    header .navbar .navbar-nav .nav-item .user-profile-area>img {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .navbar .navbar-nav .nav-item .user-profile-area {
+        gap: 8px;
+    }
+
+    header .navbar .navbar-nav .nav-item .user-details p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .deshboard-wrap {
+        padding: 70px 10px 20px;
+    }
+
+    .sec-main .ct-flex-area {
+        height: 45px;
+        margin: 0px 0px 10px;
+    }
+
+    .sec-main .ct-flex-area .ct-fm {
+        padding: 0 13px;
+        font-size: 14px;
+    }
+
+    .sec-main .ct-flex-area .search-btn {
+        font-size: 16px;
+    }
+
+    .sec-main .ct-flex-area .settings-btn {
+        font-size: 13px;
+        gap: 4px;
+    }
+
+    .sec-main .ct-flex-area .settings-btn svg {
+        width: 14px;
+    }
+
+    .home-area .multi-card.stats-card {
+        padding: 14px 20px;
+        margin: 0px 0px 10px;
+    }
+
+    .home-area .multi-card.stats-card .top-area .detail>img {
+        min-height: 25px;
+        min-width: 25px;
+    }
+
+    .home-area .multi-card.stats-card .top-area .detail h6 {
+        font-size: 14px;
+    }
+
+    .home-area .multi-card.stats-card .desc h5 {
+        font-size: 25px;
+    }
+
+    .multi-card .top-area h4 {
+        font-size: 21px;
+        margin: 0px 0px 10px;
+    }
+
+    .home-area .multi-card.table-card .table-area .table thead tr th {
+        font-size: 14px;
+    }
+
+    .home-area .multi-card.table-card .table-area .table tbody tr td {
+        font-size: 12px;
+        line-height: 22px;
+        padding: 5px 0px;
+    }
+
+    .btn-Order {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+    .settings-area .multi-card.settings-card {
+        padding: 20px 15px 20px;
+    }
+
+    .settings-area .multi-card.settings-card .form-main .inp-main .ct-lbl {
+        font-size: 11px;
+        margin: 0px 0px 5px;
+    }
+
+    .settings-area .multi-card.settings-card .form-main .inp-main .ct-fm select,
+    .settings-area .multi-card.settings-card .form-main .inp-main .ct-fm {
+        height: 40px;
+        padding: 0px 10px;
+        font-size: 12px;
+    }
+
+    .settings-area .multi-card.settings-card .form-main .inp-main {
+        margin-top: 18px;
+    }
+
+    .settings-area .multi-card.settings-card .form-main .profile-area .thumb {
+        height: 90px;
+        width: 90px;
+    }
+
+    .settings-area .multi-card.settings-card .form-main .inp-main .field-icon {
+        top: 32%;
+        right: 10px;
+        font-size: 12px;
+    }
+
+    .settings-area .multi-card.settings-card .form-main .submit-btn {
+        height: auto;
+        padding: 12px;
+        margin-top: 25px;
+        font-size: 13px;
+    }
+
+    .settings-area .multi-card.settings-card .form-main .profile-area .edit-btn .edit-thumb {
+        height: 35px;
+        width: 35px;
+    }
+
+    .deshboard-wrap .side-bar-mine .side-contant .main-img {
+        padding: 15px;
+    }
+
+    .deshboard-wrap .side-bar-mine .side-contant a {
+        font-size: 15px;
+    }
+
+    .deshboard-wrap .side-bar-mine .side-contant .txt {
+        padding: 20px 20px;
+    }
+
+    .deshboard-wrap .side-bar-mine .side-contant h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0px 0px 20px;
+    }
+
+    .deshboard-wrap .side-bar-mine .side-contant .range p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .deshboard-wrap .detail-side .main-box .content-with-box .para h4 {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px 0px 5px;
+}
+
+.deshboard-wrap .detail-side .main-box .content-with-box .para .box {
+    padding: 10px;
+    height: 150px;
+}
+
+    .deshboard-wrap .side-bar-mine .side-contant .range p span {
+        font-size: 16px;
+    }
+
+    .deshboard-wrap .side-bar-mine .search-by input {
+        padding: 10px 14px;
+        background: transparent;
+        font-size: 14px;
+    }
+
+    .deshboard-wrap .side-bar-mine .search-by button {
+        top: 9px;
+    }
+
+    .deshboard-wrap .side-bar-mine .search-by button i {
+        font-size: 12px;
+    }
+
+    .deshboard-wrap .side-bar-mine .search-by {
+        margin-top: 20px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box {
+        margin-top: 30px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-header .course-btn .two-part h4 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-header .course-btn .form-check-input.custom-radio {
+        margin: 0px 5px 0px 0px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-header .course-btn {
+        padding: 0px 0px 10px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-header .course-btn .two-part p {
+        font-size: 14px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-header .course-btn .two-part {
+        width: 78%;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn {
+        gap: 15px;
+        margin: 0px 0px 15px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p span {
+        font-size: 12px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn p span i {
+        font-size: 16px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body .tab-nav .tab-btn .form-check-input {
+        height: 16px;
+        width: 16px;
+        margin: 8px 0px 0px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body {
+        padding: 20px 0px 10px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body .tab-nav .line::before {
+        top: 30px;
+        left: 6px;
+    }
+
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item .accordion-body .tab-nav .line::before {
+        top: 30px;
+        left: 6px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .Lesson {
+        padding: 15px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .Lesson h2 {
+        font-size: 16px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box p {
+        margin: 0px 0px 15px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box .download-pdf {
+        padding: 25px 20px;
+        margin: 40px 0px 0px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box .download-pdf h6 {
+        font-size: 14px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box .download-pdf .btn-download {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box {
+        height: 360px;
+        max-height: 360px;
+        min-height: 360px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .btn-complete .btn-mark {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .btn-complete {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .deshboard-wrap .detail-side .main-box {
+        height: 480px;
+    }
+
+    .deshboard-wrap .side-bar-mine {
+        height: 480px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box h3 {
+        font-size: 20px;
+        margin: 30px 0px 15px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box .para span {
+        font-size: 14px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box .para p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box ul li {
+        font-size: 14px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box ul {
+        margin: 15px 0px 0px 15px;
+        gap: 8px;
+    }
+
+    .deshboard-wrap .detail-side .main-box .content-with-box .card p {
+        margin: 30px 0px 0px;
+    }
+    .custom-radio:checked::after{
+        background-size: 16px 16px
+    }
+    .deshboard-wrap .side-bar-mine .faq-box .accordion .accordion-item {
+        margin: 0px 0px 20px;
+    }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
